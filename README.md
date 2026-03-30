@@ -25,21 +25,21 @@ The College Chatbot is a web-based application built using Python, Machine Learn
 ## Installation & Setup
 
 1️. Clone the repository
-git clone https://github.com/Nehakk28/College_Chatbot.git
-cd College_Chatbot
+      git clone https://github.com/Nehakk28/College_Chatbot.git
+      cd College_Chatbot
 
 2️. Create virtual environment
-python -m venv venv
-venv\Scripts\activate   
+      python -m venv venv
+      venv\Scripts\activate   
 
 3️. Install dependencies
-pip install -r requirements.txt
+      pip install -r requirements.txt
 
 4️. Train the model
-python train.py
+      python train.py
 
 5️. Run the application
-python app.py
+      python app.py
 
 Open browser and go to: http://127.0.0.1:5000
 
