@@ -1,0 +1,450 @@
+{
+  "intents": [
+    {
+  "tag": "how_are_you",
+  "patterns": ["how are you", "how are you doing", "how is it going"],
+  "responses": [
+    "I'm doing great! How can I assist you today?",
+    "All good here! How can I help you?",
+    "I'm fine, thanks for asking! What can I do for you?"
+  ]
+},
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Is anyone there?", "Hey", "Good day"],
+      "responses": ["Hello! Welcome to Holy Grace Academy of Engineering. How can I help you today?", "Hi there! I'm your HGAE campus assistant. What's on your mind?"]
+    },
+    {
+      "tag": "admission",
+      "patterns": ["How to get admission?", "Admission process 2026", "Engineering admission Mala", "What are the courses offered?"],
+      "responses": ["Admission is based on KEAM scores and management criteria. We offer B.Tech in CSE, ECE, EEE, ME, and Civil. Would you like the contact number for the admission cell?"]
+    },
+    {
+      "tag": "ktu_syllabus",
+      "patterns": ["Syllabus for CSE", "KTU scheme", "Where can I find the syllabus?", "Course details"],
+      "responses": ["You can find the latest KTU 2019/2024 scheme syllabus on the official KTU portal or the HGAE department library. Which semester are you in?"]
+    },
+    {
+      "tag": "placement",
+      "patterns": ["Placement records", "Which companies visit?", "Job opportunities", "Training and Placement Cell", "Placements"],
+      "responses": ["HGAE has a dedicated Placement Cell. Major recruiters include TCS, Infosys, Wipro, and several startups. We also provide soft-skill training from the 3rd year onwards."]
+    },
+    {
+      "tag": "hostel",
+      "patterns": ["Hostel facilities", "Is there a boys hostel?", "Girls hostel Mala", "Hostel fees"],
+      "responses": ["Yes, Holy Grace provides separate, well-furnished hostels for both boys and girls with 24/7 security and mess facilities."]
+    },
+    {
+      "tag": "location",
+      "patterns": ["Where is the college?", "How to reach Holy Grace?", "Location of HGAE", "Mala campus address"],
+      "responses": ["Holy Grace Academy of Engineering is located in Kuruvilassery, Mala, Thrissur, Kerala. It is easily accessible by bus from Mala town."]
+    },
+    {
+      "tag": "library",
+      "patterns": ["Library timings", "Does the library have CSE books?", "Digital library access"],
+      "responses": ["The Central Library is open from 9:00 AM to 5:00 PM. We have a vast collection of technical journals and a high-speed digital library section."]
+    },
+    {
+      "tag": "contact",
+      "patterns": ["College phone number", "Office contact", "Email address"],
+      "responses": ["You can reach the HGAE office at 0480-2897332 or email us at office@holygrace.org."]
+    },
+    {
+      "tag": "academic_calendar",
+      "patterns": ["When are the internals?", "Exam dates", "KTU calendar", "Series exam schedule", "Is today a holiday?"],
+      "responses": ["The internal exams usually follow the KTU academic calendar. First series is typically 1 month after commencement, and the second series follows 2 months later. Check the HGAE notice board for the exact timetable."]
+    },
+    {
+      "tag": "department_info",
+      "patterns": [
+        "What are the departments?", 
+        "List of branches at Holy Grace", 
+        "Engineering courses at HGAE", 
+        "Which branches are available in Mala?",
+        "Department info"
+      ],
+      "responses": [
+        "Holy Grace Academy of Engineering offers four primary B.Tech branches: \n1. Computer Science & Engineering (CSE) \n2. Electronics & Communication (ECE) \n3. Mechanical Engineering (ME) \n4. Civil Engineering (CE). \n\nWhich one would you like to know more about?"
+      ]
+    },
+    {
+      "tag": "transportation",
+      "patterns": ["College bus routes", "Bus timings to Mala", "Is there a bus to Chalakudy?", "Kodungallur bus timing", "Transportation fees"],
+      "responses": ["Holy Grace provides bus services to Mala, Chalakudy, Kodungallur, and Angamaly. The morning buses usually arrive by 8:50 AM. Please contact the transport coordinator at the office for fee details."]
+    },
+    {
+      "tag": "ktu_regulations",
+      "patterns": ["What is the pass mark?", "KTU credit system", "How to get grace marks?", "Year back policy", "Supplementary exam fees"],
+      "responses": ["As per KTU 2019/2024 scheme, you need 40% in the end-semester exam and 50% total (Internal + External) to pass. Grace marks are awarded for NSS, Sports, and Arts. Check the KTU student login for credit details."]
+    },
+    {
+      "tag": "uniform_rules",
+      "patterns": ["Uniform policy", "Is ID card mandatory?", "Can I wear casuals?", "Workshop uniform", "Grooming rules"],
+      "responses": ["Students must wear the prescribed Holy Grace uniform with ID cards at all times on campus. For workshops and labs, the specific lab coat/uniform is mandatory. Casuals are only allowed on specially permitted days."]
+    },
+    {
+      "tag": "events_fest",
+      "patterns": ["When is the tech fest?", "Arts fest name", "College day", "Onam celebration", "Sports meet"],
+      "responses": ["HGAE hosts an annual Tech Fest and an Arts Fest (usually in the even semester). Keep an eye on the 'Holy Grace Events' Instagram page or the college lobby for this year's dates!"]
+    },
+    {
+      "tag": "canteen",
+      "patterns": ["Canteen menu", "Food on campus", "Cafeteria location", "Is there a coffee shop?", "Lunch timings"],
+      "responses": ["The campus canteen is located near the [Location] and serves breakfast, lunch, and snacks. Lunch break is typically from 12:30 PM to 1:20 PM."]
+    },
+    {
+      "tag": "nss_iedc",
+      "patterns": ["How to join NSS?", "IEDC cell", "Startup help", "Professional bodies", "IEEE chapter"],
+      "responses": ["HGAE has active NSS and IEDC units to foster social service and entrepreneurship. You can contact the faculty coordinators or student leads in the CSE/ECE departments to register."]
+    },
+    {
+      "tag": "ktu_credits",
+      "patterns": ["How many credits to pass?", "Activity points", "KTU credit requirements", "Minimum credits for B.Tech", "How to get 100 activity points?"],
+      "responses": ["To earn a KTU B.Tech degree, you need roughly 160-165 credits depending on your scheme (2019/2024). Additionally, you MUST earn 100 Activity Points through NSS, IVs, online courses (NPTEL), or arts/sports to graduate."]
+    },
+    {
+      "tag": "cgpa_conversion",
+      "patterns": ["Convert CGPA to percentage", "KTU percentage formula", "How to calculate CGPA?", "What is my percentage?"],
+      "responses": ["For the KTU 2019 scheme, the formula is: Percentage = (CGPA - 0.5) × 10. For example, a 7.5 CGPA is 70%."]
+    },
+    {
+      "tag": "office_documents",
+      "patterns": ["Bonafide certificate", "Bus pass application", "Fee receipt", "Consolidated marklist", "Transfer Certificate TC"],
+      "responses": ["For Bonafide certificates or bus passes, submit a written request at the Main Office window. Fee receipts can usually be collected immediately after payment at the cash counter."]
+    },
+    {
+      "tag": "hgae_special_labs",
+      "patterns": ["Fab Lab", "IoT Lab", "Project Lab access", "Advanced Computing Lab", "Where can I do my project?"],
+      "responses": ["Holy Grace offers specialized labs for CSE students. The IoT and Project Labs are available for final year students during project hours. Please get approval from the Project Coordinator for after-hours access."]
+    },
+    {
+      "tag": "placement_eligibility",
+      "patterns": ["Placement criteria", "Am I eligible for TCS?", "Backlog limit for placement", "Placement training"],
+      "responses": ["Most Tier-1 companies (TCS, Infosys) require a 6.0 or 6.5 CGPA with no standing backlogs. Our Training & Placement Cell (TPC) conducts mock interviews and aptitude tests starting from S5."]
+    },
+    {
+      "tag": "internship_iv",
+      "patterns": ["Industrial Visit", "IV permission", "Internship letter", "NOC for internship"],
+      "responses": ["Industrial Visits are usually organized in S5 or S7. For internships, you must apply via the HOD with a request letter to get the official NOC (No Objection Certificate) required by companies."]
+    },
+    {
+      "tag": "medical_leave",
+      "patterns": ["Medical certificate for attendance", "Duty leave", "Attendance shortage", "Condonation"],
+      "responses": ["You need 75% attendance to write the KTU exam. If you have a medical issue, submit a Medical Certificate within 3 days of returning. Duty leave for fests/sports must be pre-approved by the faculty coordinator."]
+    },
+    {
+      "tag": "nearby_places",
+      "patterns": ["Places near Mala", "Where is the nearest ATM?", "Xerox shop near college", "Food near campus"],
+      "responses": ["The nearest ATMs (SBI/Federal) are located in Mala town. There is an in-house reprographic center (Xerox) in the library, and several small cafes are just outside the main gate."]
+    },
+    {
+      "tag": "cse_project_guidelines",
+      "patterns": ["Project coordinator", "Final year project topics", "Project report format", "How to submit seminar report?", "Zero th review dates", "Main project documentation"],
+      "responses": ["For the 2026 batch, project topics must be approved by the CSE Project Coordinator. Reports should follow the HGAE LaTeX template. Ensure you complete the 0th review before the internal deadline."]
+    },
+    {
+      "tag": "ktumobile_app",
+      "patterns": ["KTU login", "How to check internal marks?", "Student portal link", "KTU registration", "Profile update"],
+      "responses": ["You can access your marks and attendance via the KTU Student Login (app.ktu.edu.in). Make sure your email and phone number are updated for OTP verification."]
+    },
+    {
+      "tag": "scholarships_kerala",
+      "patterns": ["E-grantz application", "MCM scholarship", "Fisheries scholarship", "Central sector scholarship", "How to apply for fee waiver?"],
+      "responses": ["Applications for E-grantz and MCM are processed through the Akshaya centers or the National Scholarship Portal (NSP). Submit the printed copy to the HGAE office for verification."]
+    },
+    {
+      "tag": "placement_training",
+      "patterns": ["Aptitude classes", "Soft skill training", "Coding rounds", "Mock interviews", "Who is the placement officer?"],
+      "responses": ["The Placement Cell conducts weekly aptitude and soft-skill sessions. CSE students are also given specific training in Data Structures and Competitive Programming."]
+    },
+    {
+      "tag": "college_timing",
+      "patterns": ["Working hours", "College time", "When does the first bell ring?", "Saturday holiday?", "Vacation dates", "college timing"],
+      "responses": ["College hours are from 9:00 AM to 4:10 PM. Second and Fourth Saturdays are usually holidays, unless specified by KTU or the Principal."]
+    },
+    {
+      "tag": "emergency_medical",
+      "patterns": ["Sick room location", "First aid", "Is there a doctor on campus?", "Emergency contact", "Nearest hospital to Mala"],
+      "responses": ["The sick room is located in the [Specific Block]. For emergencies, the college vehicle is available to take students to the nearest hospital in Mala town."]
+    },
+    {
+      "tag": "it_support",
+      "patterns": ["Wi-Fi password", "How to connect to college Wi-Fi?", "FortiClient login", "Lab internet access"],
+      "responses": ["To access the campus Wi-Fi, register your MAC address at the System Admin office. Use your student ID and the provided credentials for the firewall login."]
+    },
+    {
+  "tag": "smalltalk",
+  "patterns": ["ok", "yes", "yeah", "fine", "cool", "alright"],
+  "responses": ["Great!", "Got it.", "Perfect. Is there anything else I can help you with?", "Understood."]
+},
+    {
+      "tag": "cse_branch",
+      "patterns": ["Computer Science", "CSE", "BTech in CSE", "Coding department", "Software engineering"],
+      "responses": ["The CSE department at Holy Grace focuses on AI, Data Science, and Software Development. We have high-end labs and an active CSI student chapter."]
+    },
+    {
+      "tag": "ece_branch",
+      "patterns": ["Electronics", "ECE", "BTech in ECE", "Hardware department", "Communication engineering"],
+      "responses": ["The ECE department offers specialized labs in VLSI, Embedded Systems, and Robotics. It's great for students interested in both hardware and software."]
+    },
+    {
+      "tag": "civil_branch",
+      "patterns": ["Civil Engineering", "CE", "BTech in Civil", "Construction", "Surveying"],
+      "responses": ["Our Civil department has advanced surveying equipment and Material Testing labs. Students get hands-on experience with CAD and structural design."]
+    },
+    {
+      "tag": "mech_branch",
+      "patterns": ["Mechanical Engineering", "ME", "BTech in Mech", "Machines", "Automobile"],
+      "responses": ["The Mechanical department features a full-fledged workshop, heat engine labs, and CNC machine training for future engineers."]
+    },
+    {
+  "tag": "placements",
+  "patterns": [
+    "placements",
+    "placement details",
+    "what about placements",
+    "placement opportunities",
+    "does college provide placements"
+  ],
+  "responses": [
+    "Our college provides placement assistance with training programs, career guidance, and opportunities with reputed companies.",
+    "We offer placement support through campus recruitment drives, skill development programs, and industry connections.",
+    "Students are supported with placement training, internships, and opportunities to attend campus interviews."
+  ]
+},
+{
+  "tag": "thanks",
+  "patterns": [
+    "thanks",
+    "thank you",
+    "thanks a lot",
+    "thank you so much",
+    "ok thanks",
+    "great thanks"
+  ],
+  "responses": [
+    "You're welcome! ",
+    "Glad I could help!",
+    "Anytime! Let me know if you need anything else.",
+    "You're welcome! Feel free to ask more questions."
+  ]
+},
+{
+  "tag": "creator",
+  "patterns": [
+    "who created you",
+    "who made you",
+    "who is your developer",
+    "who developed you"
+  ],
+  "responses": [
+    "I was created by Neha Kumari, a B.Tech CSE student at Holy Grace Academy of Engineering, Mala."
+  ]
+},
+{
+  "tag": "semester_info",
+  "patterns": [
+    "1", "2", "3", "4", "5", "6", "7", "8",
+    "sem 1", "sem 2", "sem 3", "sem 4",
+    "sem 5", "sem 6", "sem 7", "sem 8",
+    "semester 1", "semester 2", "semester 6"
+  ],
+  "responses": [
+    "Please specify your branch with your semester so I can provide the syllabus for your semester.",
+    "Kindly mention your branch (CSE, ECE, etc.)with your semester to get detailed syllabus information."
+  ]
+},
+{
+  "tag": "cse_sem1",
+  "patterns": [
+    "cse sem 1", "cse semester 1", "cse 1", "computer science sem 1"
+  ],
+  "responses": [
+    "CSE Semester 1 includes Mathematics, Physics/Chemistry, Basics of Electrical & Electronics, Engineering Graphics, and Programming basics."
+  ]
+},
+{
+  "tag": "cse_sem2",
+  "patterns": [
+    "cse sem 2", "cse semester 2", "cse 2"
+  ],
+  "responses": [
+    "CSE Semester 2 includes Engineering Mathematics, Programming in C, and basic engineering subjects."
+  ]
+},
+{
+  "tag": "cse_sem3",
+  "patterns": [
+    "cse sem 3", "cse semester 3", "cse 3"
+  ],
+  "responses": [
+    "CSE Semester 3 includes Data Structures, Discrete Mathematics, and Digital Systems."
+  ]
+},
+{
+  "tag": "cse_sem4",
+  "patterns": [
+    "cse sem 4", "cse semester 4", "cse 4"
+  ],
+  "responses": [
+    "CSE Semester 4 includes DBMS, Computer Organization, and Operating Systems basics."
+  ]
+},
+{
+  "tag": "cse_sem5",
+  "patterns": [
+    "cse sem 5", "cse semester 5", "cse 5"
+  ],
+  "responses": [
+    "CSE Semester 5 includes Operating Systems, Software Engineering, and Computer Networks basics."
+  ]
+},
+{
+  "tag": "cse_sem6",
+  "patterns": [
+    "cse sem 6", "cse semester 6", "cse 6"
+  ],
+  "responses": [
+    "CSE Semester 6 includes Computer Networks, Compiler Design, electives, and mini project."
+  ]
+},
+{
+  "tag": "cse_sem7",
+  "patterns": [
+    "cse sem 7", "cse semester 7", "cse 7"
+  ],
+  "responses": [
+    "CSE Semester 7 includes Machine Learning, electives, and project phase 1."
+  ]
+},
+{
+  "tag": "cse_sem8",
+  "patterns": [
+    "cse sem 8", "cse semester 8", "cse 8"
+  ],
+  "responses": [
+    "CSE Semester 8 mainly focuses on final year project and electives."
+  ]
+},
+{
+  "tag": "ece_sem1",
+  "patterns": ["ece sem 1", "ece semester 1", "ece 1"],
+  "responses": ["ECE Semester 1 includes Mathematics, Physics/Chemistry, Basic Electrical & Electronics, Engineering Graphics, and Programming."]
+},
+{
+  "tag": "ece_sem2",
+  "patterns": ["ece sem 2", "ece semester 2", "ece 2"],
+  "responses": ["ECE Semester 2 includes Mathematics, Programming, and basic electronics concepts."]
+},
+{
+  "tag": "ece_sem3",
+  "patterns": ["ece sem 3", "ece semester 3", "ece 3"],
+  "responses": ["ECE Semester 3 includes Signals & Systems, Electronic Devices, and Network Theory."]
+},
+{
+  "tag": "ece_sem4",
+  "patterns": ["ece sem 4", "ece semester 4", "ece 4"],
+  "responses": ["ECE Semester 4 includes Analog Circuits, Control Systems, and Microprocessors."]
+},
+{
+  "tag": "ece_sem5",
+  "patterns": ["ece sem 5", "ece semester 5", "ece 5"],
+  "responses": ["ECE Semester 5 includes Digital Communication, Electromagnetics, and Embedded Systems basics."]
+},
+{
+  "tag": "ece_sem6",
+  "patterns": ["ece sem 6", "ece semester 6", "ece 6"],
+  "responses": ["ECE Semester 6 includes VLSI Design, Embedded Systems, and Communication Engineering."]
+},
+{
+  "tag": "ece_sem7",
+  "patterns": ["ece sem 7", "ece semester 7", "ece 7"],
+  "responses": ["ECE Semester 7 includes Wireless Communication, electives, and project phase 1."]
+},
+{
+  "tag": "ece_sem8",
+  "patterns": ["ece sem 8", "ece semester 8", "ece 8"],
+  "responses": ["ECE Semester 8 focuses on final project and electives."]
+},
+{
+  "tag": "mech_sem1",
+  "patterns": ["mech sem 1", "mechanical sem 1", "mech 1"],
+  "responses": ["Mechanical Semester 1 includes Mathematics, Physics/Chemistry, Basic Engineering, Graphics, and Programming."]
+},
+{
+  "tag": "mech_sem2",
+  "patterns": ["mech sem 2", "mechanical sem 2", "mech 2"],
+  "responses": ["Mechanical Semester 2 includes Mathematics, Mechanics, and basic engineering subjects."]
+},
+{
+  "tag": "mech_sem3",
+  "patterns": ["mech sem 3", "mechanical sem 3", "mech 3"],
+  "responses": ["Mechanical Semester 3 includes Thermodynamics, Mechanics of Solids, and Manufacturing basics."]
+},
+{
+  "tag": "mech_sem4",
+  "patterns": ["mech sem 4", "mechanical sem 4", "mech 4"],
+  "responses": ["Mechanical Semester 4 includes Fluid Mechanics, Kinematics of Machines, and Manufacturing Technology."]
+},
+{
+  "tag": "mech_sem5",
+  "patterns": ["mech sem 5", "mechanical sem 5", "mech 5"],
+  "responses": ["Mechanical Semester 5 includes Heat Transfer, Machine Design basics, and Industrial Engineering."]
+},
+{
+  "tag": "mech_sem6",
+  "patterns": ["mech sem 6", "mechanical sem 6", "mech 6"],
+  "responses": ["Mechanical Semester 6 includes Machine Design, Thermal Engineering, and electives."]
+},
+{
+  "tag": "mech_sem7",
+  "patterns": ["mech sem 7", "mechanical sem 7", "mech 7"],
+  "responses": ["Mechanical Semester 7 includes advanced electives, project phase 1, and industrial exposure."]
+},
+{
+  "tag": "mech_sem8",
+  "patterns": ["mech sem 8", "mechanical sem 8", "mech 8"],
+  "responses": ["Mechanical Semester 8 focuses on final year project and electives."]
+},
+{
+  "tag": "civil_sem1",
+  "patterns": ["civil sem 1", "civil semester 1", "civil 1"],
+  "responses": ["Civil Semester 1 includes Mathematics, Physics/Chemistry, Basic Engineering, Graphics, and Programming."]
+},
+{
+  "tag": "civil_sem2",
+  "patterns": ["civil sem 2", "civil semester 2", "civil 2"],
+  "responses": ["Civil Semester 2 includes Mathematics, Mechanics, and basic civil concepts."]
+},
+{
+  "tag": "civil_sem3",
+  "patterns": ["civil sem 3", "civil semester 3", "civil 3"],
+  "responses": ["Civil Semester 3 includes Surveying, Mechanics of Solids, and Fluid Mechanics basics."]
+},
+{
+  "tag": "civil_sem4",
+  "patterns": ["civil sem 4", "civil semester 4", "civil 4"],
+  "responses": ["Civil Semester 4 includes Structural Analysis, Geology, and Environmental Engineering basics."]
+},
+{
+  "tag": "civil_sem5",
+  "patterns": ["civil sem 5", "civil semester 5", "civil 5"],
+  "responses": ["Civil Semester 5 includes Geotechnical Engineering, Transportation Engineering, and Hydrology."]
+},
+{
+  "tag": "civil_sem6",
+  "patterns": ["civil sem 6", "civil semester 6", "civil 6"],
+  "responses": ["Civil Semester 6 includes Transportation Engineering, Environmental Engineering, and Structural Design."]
+},
+{
+  "tag": "civil_sem7",
+  "patterns": ["civil sem 7", "civil semester 7", "civil 7"],
+  "responses": ["Civil Semester 7 includes advanced electives, project phase 1, and design subjects."]
+},
+{
+  "tag": "civil_sem8",
+  "patterns": ["civil sem 8", "civil semester 8", "civil 8"],
+  "responses": ["Civil Semester 8 focuses on final project and electives."]
+}
+  ]
+}

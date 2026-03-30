@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grace Bot | Campus Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="chat-header">
+            <div class="header-info">
+                <h2>Holy Grace Bot</h2>
+                <p><span class="status-dot"></span> HGAE Mala - Online</p>
+            </div>
+        </div>
+        
+        <div id="chat-container">
+            <div class="message chatbot-message">
+                Welcome to <strong>Holy Grace Academy of Engineering</strong>! 🎓 
+                <br><br>
+                I am your campus assistant. How can I help you today?
+            </div>
+            
+            <div class="suggestions-container">
+                <button class="suggestion-chip">KTU Syllabus</button>
+                <button class="suggestion-chip">Department Info</button>
+                <button class="suggestion-chip">Admission 2026</button>
+                <button class="suggestion-chip">Placement Cell</button>
+                <button class="suggestion-chip">Campus Map</button>
+            </div>
+        </div>
+
+        <form id="user-input-form">
+            <div class="input-group">
+                <input type="text" id="user-input" placeholder="Ask about HGAE..." autofocus autocomplete="off">
+                <button type="submit" class="send-button">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            function handleSubmission(text) {
+                if (text.trim() === '') return;
+                
+                // Append User Message
+                appendMessage(text, 'user-message');
+                $('#user-input').val('');
+                
+                // Hide suggestions after the first interaction
+                $('.suggestions-container').fadeOut(300);
+
+                // AJAX call to your Flask/Backend
+                $.ajax({
+                    type: 'POST',
+                    url: '/chat',
+                    data: { user_input: text },
+                    success: function(response) {
+                        appendMessage(response, 'chatbot-message');
+                    },
+                    error: function() {
+                        appendMessage("Internal connection error. Please try again.", 'chatbot-message');
+                    }
+                });
+            }
+
+            // Click Send Button
+            $('form').on('submit', function(e) {
+                e.preventDefault();
+                handleSubmission($('#user-input').val());
+            });
+
+            // Click Suggestion Chip
+            $(document).on('click', '.suggestion-chip', function() {
+                handleSubmission($(this).text());
+            });
+
+            function appendMessage(message, className) {
+                const msg = $('<div class="message"></div>').addClass(className).text(message);
+                $('#chat-container').append(msg);
+                const scrollHeight = $('#chat-container')[0].scrollHeight;
+                $('#chat-container').animate({ scrollTop: scrollHeight }, 400);
+            }
+        });
+    </script>
+</body>
+</html>
