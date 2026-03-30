@@ -20,24 +20,8 @@ The College Chatbot is a web-based application built using Python, Machine Learn
 
 ## Project Structure
 
-College-Chatbot/
-│── app.py                 # Main Flask application
-│── train.py               # Model training script           
-│── requirements.txt       # Dependencies
-│── README.md              # Project documentation
-│
-├── templates/
-│   └── index.html         # Frontend UI
-│
-├── static/
-│   └── styles.css         # Styling
-│
-├── model/                 # Trained model files
-│
-└── dataset/  
-      └── intents.json     # Dataset for chatbot
+<img width="459" height="435" alt="Screenshot 2026-03-30 200427" src="https://github.com/user-attachments/assets/027fbdfa-ca81-4f03-9d95-a2da37c1788a" />
 
-      
 ## Installation & Setup
 
 1️. Clone the repository
