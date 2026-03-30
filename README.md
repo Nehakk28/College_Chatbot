@@ -11,12 +11,12 @@ The College Chatbot is a web-based application built using Python, Machine Learn
 - Web-based user interface
 
 ## Tech Stack
-Language: Python
-Framework: Flask
-ML Library: Scikit-learn
-NLP: NLTK
-Frontend: HTML, CSS
-Dataset: JSON (intents.json)
+- Language: Python
+- Framework: Flask
+- ML Library: Scikit-learn
+- NLP: NLTK
+- Frontend: HTML, CSS
+- Dataset: JSON (intents.json)
 
 ## Project Structure
 
